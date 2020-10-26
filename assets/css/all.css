@@ -671,3 +671,56 @@ footer {
     font-size: 14px;
     color: rgba(0,0,0,0.4);
 }
+
+
+.am-section {
+    width: 100%;
+    background-color: #324B8F;
+    color: #fff;
+    padding: 100px 0px;
+}
+.am-content {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.am-left {
+    width: 50%;
+}
+.am-right{
+    width: 35%;
+    position: relative;
+}
+.am-right::before{
+    content: '';
+    position: absolute;
+    bottom: 100px;
+    right: -120px;
+    width: 70px;
+    height: 400px;
+    background-image: url(../images/about-us.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.am-right-img img {
+    position: relative;
+    border-radius: 70px;
+}
+.am-right-img::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.1);
+    border-radius: 70px;
+    bottom: -30px;
+    right: -30px;
+}
+.am-right-img {
+    position: relative;
+}
+.am-right h4 {
+    margin-top: 50px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+}
