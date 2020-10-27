@@ -673,16 +673,55 @@ footer {
 }
 
 
+
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            About US
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
 .am-section {
     width: 100%;
     background-color: #324B8F;
     color: #fff;
     padding: 100px 0px;
+    position: relative;
+    margin-bottom: 50px;
+}
+.am-section::before{
+    content: '';
+    position: absolute;
+    bottom: 100px;
+    left: -235px;
+    width: 350px;
+    height: 350px;
+    background-image: url(../images/before1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .am-content {
     display: flex;
     justify-content: space-between;
     position: relative;
+}
+.am-left h1 {
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+.am-btn {
+    width: 270px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.am-left p {
+    font-size: 20px;
+    color: rgba(255,255,255,0.6);
 }
 .am-left {
     width: 50%;
@@ -719,8 +758,42 @@ footer {
 .am-right-img {
     position: relative;
 }
-.am-right h4 {
+.am-right h3 {
     margin-top: 50px;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: bold;
+}
+.saa-section {
+    width: 100%;
+    padding: 100px 0px;
+}
+.saa-content h2 {
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+.saa-content .form-control {
+    padding: 10px 20px;
+    border-radius: 0px;
+    color: rgba(0, 0, 0, 0.2);
+}
+.saa-content .form-control::placeholder{
+    color: rgba(0, 0, 0, 0.2);
+}
+select.form-control:not([size]):not([multiple]) {
+    height: auto;
+}
+.about-form h4{
+    max-width: 800px;
+    padding: 30px 0px;
+    line-height: 35px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+}
+.about-form-btn {
+    width: 120px;
+    height: 50px;
+    border: none;
+    background-color: #324B8F;
+    color: #fff;
+    margin-top: 30px;
 }
