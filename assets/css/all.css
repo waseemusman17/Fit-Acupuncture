@@ -599,6 +599,7 @@ footer {
     display: flex;
     justify-content: space-around;
     padding: 5%;
+    background-color: #F4F4F4;
 }
 
 .footer-right {
@@ -815,6 +816,9 @@ select.form-control:not([size]):not([multiple]) {
     height: 400px;
     position: relative;
     z-index: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;   
 }
 
 .sib-content {
@@ -959,6 +963,9 @@ select.form-control:not([size]):not([multiple]) {
     padding:10px 0px;
     background-color: transparent;
     border: none;
+}
+.sdi-faq .card-body{
+    width: 70%;
 }
 .faq-btn{
     width: 100%;
@@ -1148,4 +1155,63 @@ select.form-control:not([size]):not([multiple]) {
 }
 .next-prev a {
     font-weight: bold;
+}
+
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        Patient Information Page
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+
+.pfa-section {
+    width: 100%;
+    padding: 100px 0px;
+}
+.pfa-title {
+    padding-bottom: 50px;
+}
+.pfa-title h3 {
+    font-weight: bold;
+    font-family: 'Nunito Sans', sans-serif;
+    line-height: 50px;
+}
+.pfa-title p {
+    font-size: 20px;
+}
+
+.pfa-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.pfa-box:last-child{
+    margin-bottom: 0px;
+}
+.pfa-box:nth-child(even){
+    flex-direction: row-reverse;
+}
+.pfa-box-info {
+    width: 45%;
+}
+
+.pfa-box-img {
+    width: 45%;
+}
+
+.pfa-box-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.pfa-box-info h4 {
+    font-weight: bold;
+    padding-bottom: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.pfa-box-info p {
+    color: rgba(0,0,0,0.6);
+    width: 80%;
 }
