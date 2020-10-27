@@ -914,3 +914,164 @@ select.form-control:not([size]):not([multiple]) {
 .sas-box-btn:hover{
     color: #fff;
 }
+
+
+
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        Service Detail Page
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+.sdi-section {
+    width: 100%;
+    padding: 100px 0px;
+}
+
+.sdi-content h3 {
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.sdi-content p {
+    color: rgba(0,0,0,0.66);
+}
+
+.sdi-img {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0px;
+}
+
+.sdi-img-box {
+    width: 49%;
+}
+
+.sdi-img-box img {
+    width: 100%;
+    border-radius: 50px;
+}
+.sdi-faq .card{
+    border: none;
+}
+.sdi-faq .card-header{
+    padding:10px 0px;
+    background-color: transparent;
+    border: none;
+}
+.faq-btn{
+    width: 100%;
+    text-align: left;
+    font-size: 24px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+    color: #000;
+    position: relative;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding-left: 10px;
+}
+.faq-btn:hover{
+    text-decoration: none;
+    color: #000;
+}
+
+.faq-btn.collapsed::before {
+    content: '+';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -10px;
+    margin: auto;
+    height: fit-content;
+}
+.faq-btn::before {
+    content: '-';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -10px;
+    margin: auto;
+    height: fit-content;
+}
+.sdi-faq h3 {
+    padding: 20px 0px 40px;
+}
+.sdi-faq-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 265px;
+    height: 50px;
+    background-color: #324B8F;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 50px;
+}
+.sdi-faq-btn:hover{
+    color: #fff;
+}
+
+
+
+
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        News Blog Page
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+.bps-section {
+    width: 100%;
+    padding: 100px 0px;
+}
+
+.bps-content {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.bps-post-box {
+    width: 48%;
+    margin-bottom: 50px;
+}
+
+.post-img img {
+    width: 100%;
+    border-radius: 30px;
+}
+
+.bps-section h3 {
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.post-date {
+    padding: 10px 0px;
+    font-size: 14px;
+    color: rgba(0,0,0,0.3);
+    font-weight: bold;
+}
+
+.post-title {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+}
+
+.post-excerpt {
+    padding: 10px 0px 30px;
+}
+
+.post-btn {
+    width: 145px;
+    height: 50px;
+    background-color: #324B8F;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
