@@ -1338,3 +1338,45 @@ select.form-control:not([size]):not([multiple]) {
     color: #fff;
     font-weight: bold;
 }
+
+
+
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Contact Us Page
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+.cus-section {
+    width: 100%;
+    padding: 100px 0px;
+}
+
+.cus-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cus-box {
+    width: 50%;
+}
+
+.cus-box-link {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.cus-box-link a {
+    width: 45%;
+    margin-bottom: 50px;
+}
+.cus-box-link a span {
+    max-width: 250px;
+}
+.cus-box-link a img {
+    margin-bottom: 15px;
+}
+.bold-span{
+    font-weight: bold;
+}
