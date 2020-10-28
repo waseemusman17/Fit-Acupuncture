@@ -1215,3 +1215,97 @@ select.form-control:not([size]):not([multiple]) {
     color: rgba(0,0,0,0.6);
     width: 80%;
 }
+
+
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Pricing Page
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+.pds-section {
+    width: 100%;
+    padding: 100px 0px;
+}
+
+.pds-content h3 {
+    text-align: center;
+    padding-bottom: 50px;
+    font-weight: bold;
+}
+.pds-price-box {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    max-width: 80%;
+    margin: auto;
+}
+.price-box {
+    width: 47%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 350px;
+    border: 1px solid #D6D6D6;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-bottom: 50px;
+}
+.price-box-price {
+    color: #324A8E;
+    font-weight: bold;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.price-box-title {
+    font-weight: bold;
+    padding-top: 10px;
+}
+.price-box-title-bottom {
+    color: #000;
+}
+.price-box-detail {
+    color: rgba(0,0,0,0.7);
+    padding: 15px 0px 25px;
+}
+.price-box-btn {
+    width: 265px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: 1px solid #000;
+    color: #000;
+}
+.price-box-btn:hover{
+    background-color: #324B8F;
+    color: #fff;
+    border-color:#324B8F ;
+}
+.price-box:hover{
+    border-color: transparent;
+}
+.rpd-content h3 {
+    text-align: center;
+    padding: 50px 0px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+}
+.fullwidth-price-box {
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    min-height: 200px;
+    border: 1px solid #D6D6D6;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-bottom: 50px;
+    align-items: center;
+}
+.fullwidth-price-box:hover{
+    border-color: transparent;
+}
+.price-box-price span {
+    color: rgba(0,0,0,0.7);
+    font-size: 14px;
+}
