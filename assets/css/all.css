@@ -1522,3 +1522,47 @@ select.form-control:not([size]):not([multiple]) {
     color: #fff;
     border: none;
 }
+
+
+
+
+
+
+
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        Covid 19 Page
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+.cvs-section {
+    width: 100%;
+    padding: 100px 0px;
+}
+.cvs-content {
+    display: flex;
+    justify-content: space-between;
+}
+.cvs-box {
+    width: 40%;
+}
+.cvs-box h3 {
+    padding-top: 50px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+}
+.cvs-box p {
+    padding: 30px 0px;
+    color: rgba(0, 0, 0, 0.7);
+}
+.cvs-box ul {
+    padding-left: 20px;
+}
+.cvs-box li {
+    list-style: disc;
+    padding-left: 10px;
+    color: rgba(0, 0, 0, 0.7);
+}
+.cvs-box img{
+    border-radius: 40px;
+}
