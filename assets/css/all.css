@@ -42,11 +42,11 @@ h1,h2,h3,h4,h5,h6{
     font-weight: inherit;
 }
 h1 {
-    font-size: 60px;
+    font-size: 55px;
     font-family: 'Lora', serif;
 }
 h2 {
-    font-size: 42px;
+    font-size: 45px;
     font-family: 'Lora', serif;
 }
 h3 {
@@ -70,12 +70,10 @@ span,a {
     display: flex;
     flex-wrap: wrap;
 }
-.container {
-    max-width: 1460px;
+.container-fluid{
+    padding: 0px 20px;
 }
-.container-fluid {
-    padding: 0 80px;
-}
+
 /******************************
             HEADER
 *******************************/
@@ -383,6 +381,19 @@ span,a {
     display: flex;
     align-items: center;
     flex-direction: column;
+    position: relative;
+}
+.fitText::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -200px;
+    right: 0;
+    width: 350px;
+    height: 350px;
+    background-image: url('../images/before2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .fitImage {
     width: 50%;
@@ -573,7 +584,7 @@ span,a {
     align-items: center;
 }
 .spp-content h3 {
-    max-width: 450px;
+    max-width: 470px;
     font-weight: bold;
     color: #fff;
 }
@@ -588,6 +599,9 @@ span,a {
     font-weight: bold;
     padding: 0px 20px;
 }
+.spp-btn:hover{
+    color: #fff;
+}
 footer {
     display: flex;
     justify-content: space-between;
@@ -600,7 +614,7 @@ footer {
     display: flex;
     justify-content: space-around;
     padding: 5%;
-    background-color: #F4F4F4;
+    background-color: #F8F8F8;
 }
 
 .footer-right {
@@ -1565,4 +1579,78 @@ select.form-control:not([size]):not([multiple]) {
 }
 .cvs-box img{
     border-radius: 40px;
+}
+
+
+
+
+
+
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Media Query
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+@media(min-width:1600px){
+    h1 {
+        font-size: 65px;
+        font-family: 'Lora', serif;
+    }
+    h2 {
+        font-size: 55px;
+        font-family: 'Lora', serif;
+    }
+    h3 {
+        font-size: 36px;
+        font-family: 'Lora', serif;
+    }
+    h4 {
+        font-size: 24px;
+        font-family: 'Lora', serif;
+    }
+    h5 {
+        font-size: 18px;
+    }
+    h6 {
+        font-size: 12px;
+    }
+
+    .container {
+        max-width: 1460px;
+    }
+    .container-fluid {
+        padding: 0 80px;
+    }
+}
+@media(max-width:1440px){
+    .container-fluid {
+        padding: 0px 60px;
+    }
+    .treatment-section::before{
+        left: -260px;
+    }
+    .hero-content p{
+        font-size: 16px;
+    }
+    .treatment-image {
+        width: 40%;
+    }
+    .treatment-info p{
+        font-size: 18px;
+    }
+    .services-header p{
+        max-width: 400px;
+        font-size: 18px;
+    }
+    .fitText::before{
+        width: 300px;
+        height: 300px;
+    }
+    .fit-text ul li{
+        font-size: 18px;
+    }
+    .about-video{
+        height: 400px;
+    }
 }
