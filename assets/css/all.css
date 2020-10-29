@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Nunito+Sans:wght@300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -1358,13 +1359,14 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .cus-box {
-    width: 50%;
+    width: 45%;
 }
 
 .cus-box-link {
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
+    padding-top: 50px;
 }
 
 .cus-box-link a {
@@ -1373,10 +1375,150 @@ select.form-control:not([size]):not([multiple]) {
 }
 .cus-box-link a span {
     max-width: 250px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
 }
 .cus-box-link a img {
     margin-bottom: 15px;
 }
 .bold-span{
+    font-weight: bold !important;
+}
+.cus-box h3{
     font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+.cus-box-btn {
+    width: 265px;
+    height: 50px;
+    background-color: #324B8F;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cus-box-btn:hover{
+    color: #fff;
+}
+.cus-box form {
+    padding-top: 30px;
+}
+.cus-box input.form-control {
+    height: 50px;
+}
+.cus-box .form-control {
+    border-radius: 10px;
+}
+.cus-box p{
+    font-family: 'Raleway', sans-serif;
+}
+.form-btn {
+    text-align: right;
+    padding-top: 20px;
+}
+.cus-form-btn {
+    width: 170px;
+    height: 50px;
+    background-color: #324B8F;
+    border: none;
+    color: #fff;
+}
+.iws-section {
+    width: 100%;
+    padding: 100px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        Insurance Page
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+.iws-section {
+    width: 100%;
+    padding: 100px 0px;
+}
+
+.iws-content h3 {
+    font-weight: bold;
+    font-family: 'Nunito Sans', sans-serif;
+    max-width: 400px;
+    padding-bottom: 30px;
+}
+
+.iws-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.iws-box p {
+    width: 45%;
+}
+.iws-form {
+    padding-top: 50px;
+    width: 600px;
+}
+.iws-form label {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    padding-top: 10px;
+}
+.iws-form .form-control{
+    color: rgba(0, 0, 0, 0.2);
+    border: 0px;
+    border-bottom: 1px solid #324B8F;
+    border-radius: 0px;
+    padding: 0 0 .75rem;
+}
+.iws-form .form-control::placeholder{
+    font-family: 'Raleway', sans-serif;
+    color: rgba(0, 0, 0, 0.2);
+}
+.form-control:focus{
+    box-shadow:unset;
+}
+.iws-form .custom-control-label::before{
+    top: .7rem;
+    background-color: transparent;
+    border: 1px solid #C9C9C9;
+}
+.iws-form .custom-radio .custom-control-input:checked~.custom-control-label::before{
+    background-color: transparent;
+}
+.iws-form .custom-control-label::after{
+    top: .7rem;
+}
+.iws-form .custom-radio .custom-control-input:checked~.custom-control-label::after{
+    background-color: #7FCC16;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    top: 15px;
+    left: 4px;
+    background-image: unset;
+}
+.input-message {
+    color: #6392FA !important;
+    padding-top: 5px;
+    font-family: 'Raleway', sans-serif;
+}
+.iws-form-btn{
+    padding-top: 30px;
+}
+.iws-form-btn input[type="submit"] {
+    width: 170px;
+    height: 50px;
+    background-color: #324B8F;
+    color: #fff;
+    border: none;
 }
