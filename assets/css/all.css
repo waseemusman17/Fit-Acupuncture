@@ -859,6 +859,8 @@ select.form-control:not([size]):not([multiple]) {
 .sib-content h2 {
     font-weight: bold;
     color: #fff;
+    text-align: center;
+    padding-bottom: 10px;
 }
 .sib-content h5 {
     color: #fff;
@@ -1804,7 +1806,7 @@ select.form-control:not([size]):not([multiple]) {
     
     .appointment-link{
         margin-left: 0;
-        margin-right: 80px;
+        margin-right: 50px;
     }
     .hero-section{
         height: 500px;
@@ -1976,6 +1978,34 @@ select.form-control:not([size]):not([multiple]) {
     .cus-section{
         padding: 50px 0px;
     }
+
+
+    /* Covid 19 Page */
+    .cvs-box {
+        width: 48%;
+    }
+    .cvs-section{
+        padding: 50px 0px;
+    }
+
+
+
+    /* Blog Detail Page */
+    .bds-section{
+        padding: 50px 0px;
+    }
+    .bds-right{
+        padding-left: 30px;
+    }
+
+
+    /* Service Details Page */
+    .sdi-section{
+        padding: 50px 0px;
+    }
+
+
+
 }
 @media(max-width:767px){
     h1 {
@@ -2009,7 +2039,7 @@ select.form-control:not([size]):not([multiple]) {
         margin-top: 10px;
     }
     .blue-btn{
-        font-size: 10px;
+        font-size: 12px;
         padding: 10px;
     }
     .single-service {
@@ -2214,6 +2244,72 @@ select.form-control:not([size]):not([multiple]) {
     }
     .cus-box-btn{
         width: 220px;
+        height: 40px;
+        font-size: 12px;
+    }
+    .cus-form-btn{
+        width: 150px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+
+
+    /* Covid 19 Page */
+
+    .cvs-content{
+        flex-flow: row wrap;
+    }
+    .cvs-box:first-child{
+        order: 2;
+    }
+    .cvs-box{
+        width: 100%;
+    }
+    .cvs-box h3{
+        padding-top: 30px;
+    }
+
+
+
+    /* Blog Detail page */
+    .bds-content{
+        flex-flow: row wrap;
+    }
+    .bds-left{
+        width: 100%;
+        order: 1;
+    }
+    .bds-right{
+        width: 100%;
+        order: 2;
+        padding-left: 0px;
+        border-left: 0px;
+        padding-top: 30px;
+    }
+
+
+
+    /* Service Details Page */
+
+    .sdi-img{
+        flex-flow: row wrap;
+        padding: 20px 0px;
+    }
+    .sdi-img-box:first-child{
+        padding-bottom: 20px;
+    }
+    .sdi-img-box{
+        width: 100%;
+    }
+    .sdi-faq .card-body{
+        width: 100%;
+    }
+    .faq-btn{
+        font-size: 18px;
+    }
+    .sdi-faq-btn{
+        width: 200px;
         height: 40px;
         font-size: 12px;
     }
