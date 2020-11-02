@@ -2159,4 +2159,15 @@ select.form-control:not([size]):not([multiple]) {
         top: -10px;
         left: -10px;
     }
+
+
+    /* Blog Page */
+    .bps-post-box{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .bps-post-box:nth-last-child(2) {
+        margin-bottom: 30px;
+    }
+    
 }
