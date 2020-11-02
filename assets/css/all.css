@@ -42,7 +42,7 @@ h1,h2,h3,h4,h5,h6{
     font-weight: inherit;
 }
 h1 {
-    font-size: 55px;
+    font-size: 60px;
     font-family: 'Lora', serif;
 }
 h2 {
@@ -122,7 +122,7 @@ span,a {
     background-repeat: no-repeat;
 }
 .hero-content {
-    max-width: 520px;
+    max-width: 420px;
 }
 .hero-content h1 {
     color: #fff;
@@ -132,7 +132,7 @@ span,a {
 }
 .hero-content p {
     color: #fff;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 1.4;
 }
 .hero-content .blue-btn {
@@ -169,6 +169,8 @@ span,a {
 .treatment-image img {
     border-radius: 50px;
     position: relative;
+    height: 600px;
+    object-fit: cover;
 }
 .treatment-text h2 {
     color: #fff;
@@ -190,6 +192,13 @@ span,a {
 .treatment-option span {
     font-size: 18px;
     color: rgba(255, 255, 255, 0.5);
+}
+.treatment-icon {
+    width: 70px;
+    height: 70px;
+}
+.treatment-option:last-child .treatment-icon img {
+    filter: invert(1);
 }
 .treatmentImage {
     position: relative;
@@ -918,7 +927,7 @@ select.form-control:not([size]):not([multiple]) {
 .sas-box-info h3 {
     font-weight: bold;
     padding-bottom: 20px;
-    max-width: 350px;
+    max-width: 380px;
 }
 
 .sas-box-info p {
@@ -1216,7 +1225,10 @@ select.form-control:not([size]):not([multiple]) {
 .pfa-box-info {
     width: 45%;
 }
-
+.pfa-box-info p a {
+    text-decoration: underline;
+    color: #324b8f;
+}
 .pfa-box-img {
     width: 45%;
 }
@@ -1261,7 +1273,7 @@ select.form-control:not([size]):not([multiple]) {
     margin: auto;
 }
 .price-box {
-    width: 47%;
+    width: 32%;
     padding: 50px;
     display: flex;
     flex-direction: column;
@@ -1322,6 +1334,9 @@ select.form-control:not([size]):not([multiple]) {
     margin-bottom: 50px;
     align-items: center;
 }
+.fullwidth-price-box div {
+    max-width: 600px;
+}
 .fullwidth-price-box:hover{
     border-color: transparent;
 }
@@ -1348,7 +1363,7 @@ select.form-control:not([size]):not([multiple]) {
     padding-bottom: 30px;
 }
 .insurance-btn {
-    max-width: 155px;
+    max-width: 270px;
     height: 50px;
     display: flex;
     justify-content: center;
@@ -1357,6 +1372,9 @@ select.form-control:not([size]):not([multiple]) {
     background-color: #324B8F;
     color: #fff;
     font-weight: bold;
+}
+.insurance-btn:hover{
+    color: #fff;
 }
 
 
@@ -1447,7 +1465,10 @@ select.form-control:not([size]):not([multiple]) {
     width: 100%;
     padding: 100px 0px;
 }
-
+.google-map iframe {
+    width: 100%;
+    height: 490px;
+}
 
 
 
@@ -1470,7 +1491,7 @@ select.form-control:not([size]):not([multiple]) {
 .iws-content h3 {
     font-weight: bold;
     font-family: 'Nunito Sans', sans-serif;
-    max-width: 400px;
+    max-width: 500px;
     padding-bottom: 30px;
 }
 
@@ -1599,7 +1620,7 @@ select.form-control:not([size]):not([multiple]) {
 */
 @media(min-width:1680px){
     h1 {
-        font-size: 65px;
+        font-size: 75px;
         font-family: 'Lora', serif;
     }
     h2 {
@@ -1627,6 +1648,12 @@ select.form-control:not([size]):not([multiple]) {
     .container-fluid {
         padding: 0 80px;
     }
+    .hero-content {
+        max-width: 660px;
+    }
+    .hero-content p{
+        font-size: 28px;
+    }
 }
 @media(max-width:1440px){
     .container-fluid {
@@ -1635,8 +1662,11 @@ select.form-control:not([size]):not([multiple]) {
     .treatment-section::before{
         left: -260px;
     }
+    .hero-content {
+        max-width: 480px;
+    }
     .hero-content p{
-        font-size: 16px;
+        font-size: 20px;
     }
     .treatment-image {
         width: 40%;
@@ -1658,6 +1688,14 @@ select.form-control:not([size]):not([multiple]) {
     .about-video{
         height: 400px;
     }
+    .price-box{
+        padding: 30px;
+    }
+    .price-box-btn{
+        width: 210px;
+        height: 40px;
+        font-size: 12px;
+    }
 
     .am-right::before{
         top: 200px;
@@ -1672,6 +1710,9 @@ select.form-control:not([size]):not([multiple]) {
         font-size: 30px;
         max-width: 900px;
     }
+
+
+
 }
 
 @media(max-width:1280px){
@@ -1730,6 +1771,7 @@ select.form-control:not([size]):not([multiple]) {
     }
 
 
+
     /* About Us Page */
     .am-content{
         justify-content: space-around;
@@ -1737,6 +1779,8 @@ select.form-control:not([size]):not([multiple]) {
     .am-section::before{
         left: -265px;
     }
+
+
 }
 
 @media(max-width:1200px){
@@ -1864,6 +1908,14 @@ select.form-control:not([size]):not([multiple]) {
         width: 300px;
         height: 300px;
         left: -235px;
+    }
+
+    /* Pricing Page */
+    .fullwidth-price-box div{
+        max-width: 400px;
+    }
+    .price-box-btn{
+        width: 180px;
     }
 }
 @media(max-width:991px){
@@ -2006,6 +2058,21 @@ select.form-control:not([size]):not([multiple]) {
 
 
 
+    /* Pricing Page */
+    .fullwidth-price-box{
+        flex-flow: row wrap;
+    }
+    .fullwidth-price-box div{
+        width: 100%;
+    }
+    .price-box-btn{
+        width: 100%;
+    }
+    .price-box{
+        width: 100%;
+    }
+
+
 }
 @media(max-width:767px){
     h1 {
@@ -2145,6 +2212,9 @@ select.form-control:not([size]):not([multiple]) {
     .services-header p,
     .about-text p{
         font-size: 16px;
+    }
+    .treatment-image img{
+        height: 400px;
     }
 
 
@@ -2312,5 +2382,11 @@ select.form-control:not([size]):not([multiple]) {
         width: 200px;
         height: 40px;
         font-size: 12px;
+    }
+
+
+    /* Pricing Page */
+    .pds-price-box{
+        max-width: 100%;
     }
 }
