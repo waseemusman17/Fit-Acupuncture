@@ -1965,6 +1965,17 @@ select.form-control:not([size]):not([multiple]) {
     .sas-box:nth-child(even) {
         flex-direction: row;
     }
+
+
+    /* Patient Page */
+    .pfa-section{
+        padding: 50px 0px;
+    }
+
+    /* COntact Us Page */
+    .cus-section{
+        padding: 50px 0px;
+    }
 }
 @media(max-width:767px){
     h1 {
@@ -2170,4 +2181,40 @@ select.form-control:not([size]):not([multiple]) {
         margin-bottom: 30px;
     }
     
+
+    /* Patient Information */
+    .pfa-section{
+        padding: 50px 0px;
+    }
+    .pfa-box{
+        flex-flow: row wrap;
+    }
+    .pfa-box-info{
+        width: 100%;
+        order: 2;
+    }
+    .pfa-box-img{
+        width: 100%;
+        order: 1;
+        margin-bottom: 30px;
+    }
+    .pfa-box-info p{
+        width: 100%;
+    }
+
+    /* Contact Us Page */
+    .cus-content{
+        flex-flow: row wrap;
+    }
+    .cus-box {
+        width: 100%;
+    }
+    .cus-box:first-child {
+        padding-bottom: 30px;
+    }
+    .cus-box-btn{
+        width: 220px;
+        height: 40px;
+        font-size: 12px;
+    }
 }
