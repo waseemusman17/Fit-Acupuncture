@@ -726,7 +726,7 @@ footer {
     justify-content: space-between;
     position: relative;
 }
-.am-left h1 {
+.am-left h2 {
     font-weight: bold;
     padding-bottom: 30px;
 }
@@ -870,11 +870,12 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .sas-section h4 {
-    max-width: 800px;
+    max-width: 990px;
     padding-bottom: 50px;
     line-height: 35px;
     font-family: 'Nunito Sans', sans-serif;
-    font-weight: 600;
+    font-weight: bold;
+    font-size: 38px;
 }
 .sas-box {
     display: flex;
@@ -893,7 +894,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .sas-box-image {
-    width: 50%;
+    width: 55%;
     position: relative;
 }
 .sas-box-image::before {
@@ -1663,6 +1664,12 @@ select.form-control:not([size]):not([multiple]) {
         width: 50px;
         height: 300px;
     }
+
+    /* Service Page */
+    .sas-section h4{
+        font-size: 30px;
+        max-width: 900px;
+    }
 }
 
 @media(max-width:1280px){
@@ -1939,6 +1946,25 @@ select.form-control:not([size]):not([multiple]) {
     .am-section::before{
         display: none;
     }
+
+
+    /* Service Page */
+    .sas-box{
+        flex-flow: row wrap;
+        margin-bottom: 100px;
+    }
+    .sas-box-info {
+        width: 100%;
+        order: 2;
+    }
+    .sas-box-image{
+        width: 100%;
+        order: 1;
+        margin-bottom: 20px;
+    }
+    .sas-box:nth-child(even) {
+        flex-direction: row;
+    }
 }
 @media(max-width:767px){
     h1 {
@@ -2102,5 +2128,35 @@ select.form-control:not([size]):not([multiple]) {
     }
     .am-left p{
         font-size: 16px;
+    }
+    .am-btn{
+        width: 200px;
+        height: 40px;
+        font-size: 12px;
+        margin-top: 30px;
+    }
+
+
+
+    /* Service Page */
+    .sas-section{
+        padding: 50px 0px;
+    }
+    .sas-section h4{
+        font-size: 24px;
+        padding-bottom: 30px;
+    }
+    .sas-box-btn{
+        width: 120px;
+        height: 40px;
+        margin-top: 20px;
+        font-size: 12px;
+    }
+    .sas-box{
+        margin-bottom: 30px;
+    }
+    .sas-box-image::before{
+        top: -10px;
+        left: -10px;
     }
 }
