@@ -118,6 +118,8 @@ span,a {
     align-items: flex-end;
     padding-bottom: 80px;
     height: calc(100vh - 112px);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .hero-content {
     max-width: 520px;
@@ -1592,7 +1594,7 @@ select.form-control:not([size]):not([multiple]) {
             Media Query
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
-@media(min-width:1600px){
+@media(min-width:1680px){
     h1 {
         font-size: 65px;
         font-family: 'Lora', serif;
@@ -1789,4 +1791,70 @@ select.form-control:not([size]):not([multiple]) {
     .treatment-section{
         padding: 85px 0 1px;
     }
+    .spp-btn{
+        font-size: 14px;
+        min-width: 200px;
+    }
 }
+@media(max-width:991px){
+    .treatment-image{
+        width: 100%;
+        order: 1;
+        margin-bottom: 50px;
+    }
+    .treatment-text {
+        width: 100%;
+        order: 2;
+    }
+    .services-section {
+        padding: 50px 30px;
+    }
+    .biography-image {
+        width: 100%;
+        height: auto;
+        order: 1;
+        margin-bottom: 50px;
+    }
+    .biography-text {
+        width: 100%;
+        order: 2;
+    }
+    .fitImage {
+        width: 100%;
+        order: 1;
+        margin-bottom: 50px;
+    }
+    .fitText{
+        width: 100%;
+        order: 2;
+    }
+    .about-video {
+        width: 100%;
+        order: 1;
+        margin-bottom: 50px;
+    }
+    .about-text {
+        width: 100%;
+        order: 2;
+    }
+    .news-content{
+        flex-flow: row wrap;
+    }
+    .news-box {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .news-box:last-child{
+        margin-bottom: 0px;
+    }
+    footer{
+        flex-flow: row wrap;
+    }
+    .footer-left{
+        width: 100%;
+    }
+    .footer-right{
+        width: 100%;
+    }
+}
+@media 
